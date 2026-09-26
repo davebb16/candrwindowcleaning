@@ -69,18 +69,14 @@ You are working in the **C&R Window Cleaners** site — a React + Vite + TypeScr
 ### Custom (`/src/components/`)
 | Component | Purpose |
 |---|---|
-| `Hero.tsx` | Full-viewport homepage hero — dark editorial style, transparent nav (logo, "Get a Quote", menu), giant `font-serif` wordmark, right-aligned intro copy + scroll cue. Background is currently a CSS gradient placeholder — see Image Assets below to swap in the real photo. |
+| `Hero.tsx` | Full-viewport homepage hero — dark editorial style, transparent nav (logo, "Get a Quote", menu), giant `font-serif` wordmark, right-aligned intro copy + scroll cue. Background photo is `hero.jpg`; logo is still a text wordmark. |
 
 ### shadcn Primitives (`/src/components/ui/`)
 `button`
 
 ## Image Assets (`/src/assets/images/`)
-<!-- List image assets as they are added -->
 - Import images as ES modules: `import img from "@/assets/images/file.webp"`
-- **Pending: hero photo.** `Hero.tsx` currently renders a CSS gradient in place of the background photo. To swap it in:
-  1. Add the file at `src/assets/images/hero.jpg` (or `.webp`)
-  2. In `Hero.tsx`, add `import heroImage from '@/assets/images/hero.jpg'` at the top
-  3. Replace the placeholder gradient `<div>` with `<img src={heroImage} alt="" className="absolute inset-0 h-full w-full object-cover" />` (keep the overlay `<div>`s below it as-is for text legibility)
+- `hero.jpg` — homepage hero background (storefront glass exterior), used in `Hero.tsx`. Source is 1600×1200 (605KB, JPEG). At full-bleed `object-cover` this is fine on typical laptop/desktop widths, especially since the hero applies a heavy dark overlay for text legibility — but on very large/4K monitors (~2560px+ CSS width) it will be upscaled 1.6–2.4x and can look soft in brighter/detailed areas (sky, glass highlights). Swap in a higher-res version (2400–3200px+ wide, ideally closer to 16:9 to reduce top/bottom cropping) if/when one becomes available — same `import` + filename, no code changes needed.
 - **Pending: logo.** The nav currently uses a text wordmark ("C&R") to match the reference design's text-only logo treatment. If a logo graphic is provided instead, drop it in this folder and swap the `<span>` in `Hero.tsx`'s nav for an `<img>`.
 
 ## Routes (`/src/routes/`)

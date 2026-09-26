@@ -1,26 +1,23 @@
 import { Menu } from 'lucide-react'
-
-// TODO: once the real hero photo is provided, add it at src/assets/images/hero.jpg,
-// import it here (`import heroImage from '@/assets/images/hero.jpg'`), and replace
-// the placeholder gradient <div> below with an <img> using the same absolute/cover
-// classes. See CLAUDE.md > Image Assets for the exact steps.
+import heroImage from '@/assets/images/hero.jpg'
 
 export function Hero() {
   return (
     <section className="relative flex min-h-screen w-full flex-col overflow-hidden bg-neutral-950">
-      {/* Background photo placeholder — swap for the real hero image, see TODO above */}
-      <div
-        aria-hidden
-        className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_#3a3f47_0%,_#101114_55%,_#050506_100%)]"
+      <img
+        src={heroImage}
+        alt="C&R Window Cleaners — commercial storefront glass, freshly cleaned"
+        className="absolute inset-0 h-full w-full object-cover"
       />
-      {/* Legibility overlay */}
+      {/* Legibility overlays — the source photo is a bright daytime shot, so it needs a fairly heavy tint */}
+      <div aria-hidden className="absolute inset-0 bg-black/40" />
       <div
         aria-hidden
-        className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/10"
+        className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/50 to-black/20"
       />
       <div
         aria-hidden
-        className="absolute inset-0 bg-gradient-to-r from-black/50 via-transparent to-transparent"
+        className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-black/10"
       />
 
       <nav className="relative z-20 flex items-center justify-between border-b border-white/15 px-6 py-6 md:px-10">
