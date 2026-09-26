@@ -1,6 +1,7 @@
 import { Menu } from 'lucide-react'
 import heroImage from '@/assets/images/hero.jpg'
 import logo from '@/assets/images/logo.svg'
+import heroLogo from '@/assets/images/hero-logo.png'
 
 export function Hero() {
   return (
@@ -37,11 +38,11 @@ export function Hero() {
       </nav>
 
       <div className="relative z-20 mt-auto flex flex-col gap-10 px-6 pb-10 md:flex-row md:items-end md:justify-between md:px-10 md:pb-14">
-        <h1 className="font-serif text-[16vw] leading-[0.82] tracking-tight text-white select-none sm:text-[13vw] md:text-[10vw] lg:text-[8vw]">
-          C&R
-          <br />
-          Windows
-        </h1>
+        <img
+          src={heroLogo}
+          alt="C&R Window Cleaners"
+          className="w-64 select-none sm:w-80 md:w-96 lg:w-[28rem]"
+        />
 
         <div className="max-w-xs text-left text-white lg:max-w-sm">
           <p className="font-serif text-lg leading-snug uppercase sm:text-xl">
