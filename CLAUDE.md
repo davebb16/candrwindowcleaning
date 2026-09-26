@@ -19,7 +19,9 @@ You are working in the **C&R Window Cleaners** site — a React + Vite + TypeScr
   - Reuse existing custom components from `/src/components/` if they fit
   - shadcn primitives in `/src/components/ui/` may be edited when default styles conflict with the brand
 - **Icons**: Lucide (`lucide-react`)
-- **Font**: Geist Variable, self-hosted via `@fontsource-variable/geist`
+- **Fonts**: self-hosted via fontsource, both loaded in `App.css` and mapped to Tailwind's `--font-*` theme tokens
+  - Body/UI: Geist Variable (`@fontsource-variable/geist`) → `font-sans` (default)
+  - Display/headings: Bodoni Moda Variable (`@fontsource-variable/bodoni-moda`) → `font-serif` — used for the hero wordmark and editorial-style headings (high-contrast serif, matches the moody/luxury brand direction)
 - Routing: TanStack Router (file-based in `/src/routes/`)
   - Pages/layouts in `/src/routes/`
   - Use `<Link />` for internal routes, `<a href>` for external URLs
@@ -67,7 +69,7 @@ You are working in the **C&R Window Cleaners** site — a React + Vite + TypeScr
 ### Custom (`/src/components/`)
 | Component | Purpose |
 |---|---|
-<!-- Add components here as they are built -->
+| `Hero.tsx` | Full-viewport homepage hero — dark editorial style, transparent nav (logo, "Get a Quote", menu), giant `font-serif` wordmark, right-aligned intro copy + scroll cue. Background is currently a CSS gradient placeholder — see Image Assets below to swap in the real photo. |
 
 ### shadcn Primitives (`/src/components/ui/`)
 `button`
@@ -75,6 +77,11 @@ You are working in the **C&R Window Cleaners** site — a React + Vite + TypeScr
 ## Image Assets (`/src/assets/images/`)
 <!-- List image assets as they are added -->
 - Import images as ES modules: `import img from "@/assets/images/file.webp"`
+- **Pending: hero photo.** `Hero.tsx` currently renders a CSS gradient in place of the background photo. To swap it in:
+  1. Add the file at `src/assets/images/hero.jpg` (or `.webp`)
+  2. In `Hero.tsx`, add `import heroImage from '@/assets/images/hero.jpg'` at the top
+  3. Replace the placeholder gradient `<div>` with `<img src={heroImage} alt="" className="absolute inset-0 h-full w-full object-cover" />` (keep the overlay `<div>`s below it as-is for text legibility)
+- **Pending: logo.** The nav currently uses a text wordmark ("C&R") to match the reference design's text-only logo treatment. If a logo graphic is provided instead, drop it in this folder and swap the `<span>` in `Hero.tsx`'s nav for an `<img>`.
 
 ## Routes (`/src/routes/`)
 | Route file | Path | Purpose |
