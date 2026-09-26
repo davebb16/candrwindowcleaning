@@ -37,7 +37,7 @@ export function Hero() {
         </div>
       </nav>
 
-      <div className="relative z-20 mt-auto flex flex-col gap-10 px-6 pb-10 md:flex-row md:items-end md:justify-between md:px-10 md:pb-14">
+      <div className="relative z-20 mt-auto flex flex-col items-start gap-6 px-6 pb-10 md:px-10 md:pb-14">
         <img
           src={heroLogo}
           alt="C&R Window Cleaners"
