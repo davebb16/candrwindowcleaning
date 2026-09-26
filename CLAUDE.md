@@ -74,7 +74,9 @@ You are working in the **C&R Window Cleaners** site — a React + Vite + TypeScr
 | Component | Purpose |
 |---|---|
 | `Hero.tsx` | Full-viewport homepage hero — dark editorial style, transparent nav (logo, "Get a Quote", menu), large logo lockup on the left with intro copy + scroll cue in a column on the right. Background photo is `hero.jpg`; nav logo is `logo.svg`; main hero logo lockup is `hero-logo.png`. |
-| `QuoteForm.tsx` | "Get a Quote" section below the hero on the homepage. Name/email/phone/message fields + honeypot anti-spam field, submits via EmailJS (see Stack & Tools). |
+| `WhatWeDo.tsx` | "What We Do" section (light bg) below the hero. Heading + a 4-item icon grid: Commercial, Residential, Apartments, Storefronts (Lucide icons). |
+| `WhyChooseUs.tsx` | "Why Choose Us" section (dark bg, matches hero tone) — single large `font-serif` value-prop statement, centered. |
+| `QuoteForm.tsx` | "Get a Quote" section at the bottom of the homepage. Name/email/phone/message fields + honeypot anti-spam field, submits via EmailJS (see Stack & Tools). |
 
 ### shadcn Primitives (`/src/components/ui/`)
 `button` · `input` · `textarea` · `label`
