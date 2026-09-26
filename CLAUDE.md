@@ -30,6 +30,10 @@ You are working in the **C&R Window Cleaners** site — a React + Vite + TypeScr
 - Data: TanStack Query for all fetching, caching, mutations
   - Prefer `useQuery` / `useMutation` / `useSuspenseQuery`
   - Co-locate queries in hooks or components
+- **Forms/email**: EmailJS (`@emailjs/browser`) — sends form submissions straight from the client, no backend needed
+  - Config comes from env vars: `VITE_EMAILJS_SERVICE_ID`, `VITE_EMAILJS_TEMPLATE_ID`, `VITE_EMAILJS_PUBLIC_KEY` — see `.env.example`. Copy it to `.env` (gitignored) and fill in real values from the EmailJS dashboard
+  - The EmailJS template should reference these field names (they're the `name` attributes on the form inputs, sent via `emailjs.sendForm`): `from_name`, `from_email`, `phone`, `message`
+  - If the env vars are missing, forms fail gracefully (error state shown to the user, details logged to console) rather than throwing
 
 ## Brand & Design System
 <!-- Fill this section in once branding is established -->
@@ -69,10 +73,11 @@ You are working in the **C&R Window Cleaners** site — a React + Vite + TypeScr
 ### Custom (`/src/components/`)
 | Component | Purpose |
 |---|---|
-| `Hero.tsx` | Full-viewport homepage hero — dark editorial style, transparent nav (logo, "Get a Quote", menu), large logo lockup, right-aligned intro copy + scroll cue. Background photo is `hero.jpg`; nav logo is `logo.svg`; main hero logo lockup is `hero-logo.png`. |
+| `Hero.tsx` | Full-viewport homepage hero — dark editorial style, transparent nav (logo, "Get a Quote", menu), large logo lockup with intro copy stacked beneath it, scroll cue. Background photo is `hero.jpg`; nav logo is `logo.svg`; main hero logo lockup is `hero-logo.png`. |
+| `QuoteForm.tsx` | "Get a Quote" section below the hero on the homepage. Name/email/phone/message fields + honeypot anti-spam field, submits via EmailJS (see Stack & Tools). |
 
 ### shadcn Primitives (`/src/components/ui/`)
-`button`
+`button` · `input` · `textarea` · `label`
 
 ## Image Assets (`/src/assets/images/`)
 - Import images as ES modules: `import img from "@/assets/images/file.webp"`
