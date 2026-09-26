@@ -12,7 +12,6 @@ export function Hero() {
         className="absolute inset-0 h-full w-full object-cover"
       />
       {/* Legibility overlays — the source photo is a bright daytime shot, so it needs a fairly heavy tint */}
-      <div aria-hidden className="absolute inset-0 bg-black/40" />
       <div
         aria-hidden
         className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/50 to-black/20"
@@ -41,7 +40,7 @@ export function Hero() {
         <img
           src={heroLogo}
           alt="C&R Window Cleaners"
-          className="w-64 select-none sm:w-80 md:w-96 lg:w-[28rem]"
+          className="w-64 select-none sm:w-80 md:w-96 lg:w-[40rem]"
         />
 
         <div className="max-w-xs text-left text-white lg:max-w-sm">
