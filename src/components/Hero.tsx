@@ -21,8 +21,8 @@ export function Hero() {
         className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-black/10"
       />
 
-      <nav className="relative z-20 border-b border-white/15 px-6 py-6 md:px-10">
-        <div className="mx-auto flex max-w-7xl items-center justify-between">
+      <nav className="relative z-20 border-b border-white/15 px-6 py-6 md:px-10 lg:px-16">
+        <div className="mx-auto flex max-w-8xl items-center justify-between">
           <img src={logo} alt="C&R Window Cleaners" className="h-9 w-auto invert md:h-10" />
           <div className="flex items-center gap-6">
             <button
@@ -38,12 +38,12 @@ export function Hero() {
         </div>
       </nav>
 
-      <div className="relative z-20 my-auto px-6 py-10 md:px-10 md:py-14">
-        <div className="mx-auto flex max-w-7xl flex-col gap-10 md:flex-row md:items-end md:justify-between">
+      <div className="relative z-20 my-auto px-6 py-10 md:px-10 md:py-14 lg:px-16">
+        <div className="mx-auto flex max-w-8xl flex-col gap-10 md:flex-row md:items-end md:justify-between">
           <img
             src={heroLogo}
             alt="C&R Window Cleaners"
-            className="w-64 select-none sm:w-80 md:w-96 lg:w-[40rem]"
+            className="w-64 select-none sm:w-80 md:w-96 lg:w-[32rem]"
           />
 
           <div className="max-w-xs text-left text-white lg:max-w-sm">
@@ -57,7 +57,7 @@ export function Hero() {
               pairing trusted craftsmanship with a spotless, streak-free
               finish — for homes and businesses that expect nothing less.
             </p>
-            <p className="mt-16 text-xs tracking-[0.3em] text-white/60 uppercase">
+            <p className="mt-8 lg:mt-16 text-xs tracking-[0.3em] text-white/60 uppercase">
               Scroll
             </p>
           </div>

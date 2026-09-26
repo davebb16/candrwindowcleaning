@@ -47,7 +47,7 @@ You are working in the **C&R Window Cleaners** site — a React + Vite + TypeScr
   - Primary CTA: `bg-brand text-white font-semibold hover:bg-brand/90`
   - Secondary CTA: `bg-dark text-white border border-white/20 hover:bg-dark/80`
   -->
-- **Section max-width**: `mx-auto max-w-7xl px-4 sm:px-6 lg:px-8`
+- **Section max-width**: `mx-auto max-w-8xl px-4 sm:px-6 lg:px-8` — `max-w-8xl` (88rem/1408px) is a custom size added via `--container-8xl` in `App.css`'s `@theme inline` block (Tailwind's default scale tops out at `7xl`/80rem)
 - **Responsive breakpoints**: Mobile-first. `md:` for desktop nav visibility, `lg:` for layout shifts
 - **CSS utility classes** (defined in `App.css` `@layer components`):
   <!-- Add project-specific utility classes as they are created -->
