@@ -1,7 +1,6 @@
 import { Menu } from 'lucide-react'
 import heroImage from '@/assets/images/hero.jpg'
 import logo from '@/assets/images/logo.svg'
-import heroLogo from '@/assets/images/hero-logo.png'
 
 export function Hero() {
   return (
@@ -37,20 +36,13 @@ export function Hero() {
         </div>
       </nav>
 
-      <div className="relative z-20 mt-auto flex flex-col items-start gap-6 px-6 pb-10 md:px-10 md:pb-14">
-        <img
-          src={heroLogo}
-          alt="C&R Window Cleaners"
-          className="w-64 select-none sm:w-80 md:w-96 lg:w-[28rem]"
-        />
+      <div className="relative z-20 mt-auto flex flex-col items-start gap-8 px-6 pb-14 md:px-10 md:pb-20">
+        <h1 className="max-w-4xl font-serif text-[12vw] leading-[0.95] tracking-tight text-white select-none sm:text-[9vw] md:text-[7vw] lg:text-[5.5vw]">
+          Crystal clear care for every window.
+        </h1>
 
-        <div className="max-w-xs text-left text-white lg:max-w-sm">
-          <p className="font-serif text-lg leading-snug uppercase sm:text-xl">
-            Crystal Clear Care
-            <br />
-            For Every Window
-          </p>
-          <p className="mt-4 text-sm leading-relaxed text-white/70">
+        <div className="max-w-md text-left text-white">
+          <p className="text-base leading-relaxed text-white/70 sm:text-lg">
             C&R Window Cleaners brings meticulous care to every pane,
             pairing trusted craftsmanship with a spotless, streak-free
             finish — for homes and businesses that expect nothing less.
