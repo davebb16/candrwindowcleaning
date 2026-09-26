@@ -1,5 +1,6 @@
 import { Menu } from 'lucide-react'
 import heroImage from '@/assets/images/hero.jpg'
+import logo from '@/assets/images/logo.svg'
 
 export function Hero() {
   return (
@@ -21,9 +22,7 @@ export function Hero() {
       />
 
       <nav className="relative z-20 flex items-center justify-between border-b border-white/15 px-6 py-6 md:px-10">
-        <span className="font-serif text-lg tracking-[0.35em] text-white">
-          C&R
-        </span>
+        <img src={logo} alt="C&R Window Cleaners" className="h-9 w-auto invert md:h-10" />
         <div className="flex items-center gap-6">
           <button
             type="button"

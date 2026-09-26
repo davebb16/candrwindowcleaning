@@ -69,7 +69,7 @@ You are working in the **C&R Window Cleaners** site — a React + Vite + TypeScr
 ### Custom (`/src/components/`)
 | Component | Purpose |
 |---|---|
-| `Hero.tsx` | Full-viewport homepage hero — dark editorial style, transparent nav (logo, "Get a Quote", menu), giant `font-serif` wordmark, right-aligned intro copy + scroll cue. Background photo is `hero.jpg`; logo is still a text wordmark. |
+| `Hero.tsx` | Full-viewport homepage hero — dark editorial style, transparent nav (logo, "Get a Quote", menu), giant `font-serif` wordmark, right-aligned intro copy + scroll cue. Background photo is `hero.jpg`; nav logo is `logo.svg`. |
 
 ### shadcn Primitives (`/src/components/ui/`)
 `button`
@@ -77,7 +77,7 @@ You are working in the **C&R Window Cleaners** site — a React + Vite + TypeScr
 ## Image Assets (`/src/assets/images/`)
 - Import images as ES modules: `import img from "@/assets/images/file.webp"`
 - `hero.jpg` — homepage hero background (storefront glass exterior), used in `Hero.tsx`. Source is 1600×1200 (605KB, JPEG). At full-bleed `object-cover` this is fine on typical laptop/desktop widths, especially since the hero applies a heavy dark overlay for text legibility — but on very large/4K monitors (~2560px+ CSS width) it will be upscaled 1.6–2.4x and can look soft in brighter/detailed areas (sky, glass highlights). Swap in a higher-res version (2400–3200px+ wide, ideally closer to 16:9 to reduce top/bottom cropping) if/when one becomes available — same `import` + filename, no code changes needed.
-- **Pending: logo.** The nav currently uses a text wordmark ("C&R") to match the reference design's text-only logo treatment. If a logo graphic is provided instead, drop it in this folder and swap the `<span>` in `Hero.tsx`'s nav for an `<img>`.
+- `logo.svg` — the "CR" monogram, used in `Hero.tsx`'s nav. Shapes have no explicit `fill`, so they default to solid black (SVG spec default) — for a dark background it's rendered with Tailwind's `invert` filter class (`className="invert"`) to flip it white. If it's ever placed on a light background, drop the `invert` class instead.
 
 ## Routes (`/src/routes/`)
 | Route file | Path | Purpose |
