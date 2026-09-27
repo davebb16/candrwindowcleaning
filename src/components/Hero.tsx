@@ -37,7 +37,7 @@ export function Hero() {
         </div>
       </nav>
 
-      <div className="relative z-20 mt-auto mb-16 px-6 py-10 md:mb-24 md:px-10 md:py-14 lg:px-16">
+      <div className="relative z-20 my-auto px-6 py-10 md:px-10 md:py-14 lg:px-16">
         <div className="mx-auto flex max-w-8xl flex-col items-center gap-8 text-center text-white">
           <h1 className="max-w-4xl font-serif text-[12vw] leading-[0.95] tracking-tight select-none sm:text-[9vw] md:text-[7vw] lg:text-[5.5vw]">
             Crystal clear care for every window.
