@@ -1,7 +1,6 @@
 import { Menu } from 'lucide-react'
 import heroImage from '@/assets/images/hero.jpg'
 import logo from '@/assets/images/logo.svg'
-import heroLogo from '@/assets/images/hero-logo.png'
 
 export function Hero() {
   return (
@@ -39,28 +38,18 @@ export function Hero() {
       </nav>
 
       <div className="relative z-20 mt-auto mb-16 px-6 py-10 md:mb-24 md:px-10 md:py-14 lg:px-16">
-        <div className="mx-auto flex max-w-8xl flex-col gap-10 md:flex-row md:items-end md:justify-between">
-          <img
-            src={heroLogo}
-            alt="C&R Window Cleaners"
-            className="w-64 select-none sm:w-80 md:w-96 lg:w-[24rem]"
-          />
-
-          <div className="max-w-xs text-left text-white lg:max-w-sm lg:flex lg:flex-col lg:gap-inherit">
-            <p className="font-serif text-lg leading-snug uppercase sm:text-xl lg:text-2xl">
-              Crystal Clear Care
-              <br />
-              For Every Window
-            </p>
-            <p className="mt-4 text-sm leading-relaxed text-white/70">
-              C&R Window Cleaners brings meticulous care to every pane,
-              pairing trusted craftsmanship with a spotless, streak-free
-              finish — for homes and businesses that expect nothing less.
-            </p>
-            <p className="mt-8 lg:mt-24 text-xs tracking-[0.3em] text-white/60 uppercase">
-              Scroll
-            </p>
-          </div>
+        <div className="mx-auto flex max-w-8xl flex-col items-center gap-8 text-center text-white">
+          <h1 className="max-w-4xl font-serif text-[12vw] leading-[0.95] tracking-tight select-none sm:text-[9vw] md:text-[7vw] lg:text-[5.5vw]">
+            Crystal clear care for every window.
+          </h1>
+          <p className="max-w-xl text-base leading-relaxed text-white/70 sm:text-lg">
+            C&R Window Cleaners brings meticulous care to every pane,
+            pairing trusted craftsmanship with a spotless, streak-free
+            finish — for homes and businesses that expect nothing less.
+          </p>
+          <p className="text-xs tracking-[0.3em] text-white/60 uppercase">
+            Scroll
+          </p>
         </div>
       </div>
     </section>
