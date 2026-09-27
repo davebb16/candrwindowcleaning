@@ -5,7 +5,7 @@ import heroLogo from '@/assets/images/hero-logo.png'
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-screen w-full flex-col overflow-hidden bg-slate-950">
+    <section className="relative flex min-h-screen w-full flex-col overflow-hidden bg-gray-950">
       <img
         src={heroImage}
         alt="C&R Window Cleaners — commercial storefront glass, freshly cleaned"

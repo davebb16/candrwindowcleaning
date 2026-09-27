@@ -33,7 +33,7 @@ const services = [
 
 export function WhatWeDo() {
   return (
-    <section className="bg-grid bg-gray-100 px-6 py-20 md:px-10 md:py-28 lg:px-16 dark:bg-slate-900">
+    <section className="bg-grid bg-gray-100 px-6 py-20 md:px-10 md:py-28 lg:px-16 dark:bg-gray-950">
       <div className="mx-auto max-w-8xl">
         <p className="font-serif text-3xl uppercase sm:text-4xl">
           What We Do
