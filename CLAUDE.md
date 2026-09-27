@@ -73,10 +73,11 @@ You are working in the **C&R Window Cleaners** site — a React + Vite + TypeScr
 ### Custom (`/src/components/`)
 | Component | Purpose |
 |---|---|
-| `Hero.tsx` | Full-viewport homepage hero — dark editorial style, transparent nav (logo, "Get a Quote", menu), vertically centered content with the large logo lockup on the left and intro copy + scroll cue in a column on the right. Background photo is `hero.jpg`; nav logo is `logo.svg`; main hero logo lockup is `hero-logo.png`. |
+| `Hero.tsx` | Full-viewport homepage hero — dark editorial style, transparent nav (logo, "Get a Quote" — no hamburger/menu button), vertically centered content with the large logo lockup on the left and intro copy + clickable scroll cue in a column on the right. Both "Get a Quote" and "Scroll" link to `#quote` (see QuoteForm). Background photo is `hero.jpg`; nav logo is `logo.svg`; main hero logo lockup is `hero-logo.png`. |
 | `WhatWeDo.tsx` | "What We Do" section (light bg) below the hero. Heading + a 4-item icon grid: Commercial, Residential, Apartments, Storefronts (Lucide icons). |
 | `WhyChooseUs.tsx` | "Why Choose Us" section (dark bg, matches hero tone) — single large `font-serif` value-prop statement, centered. |
-| `QuoteForm.tsx` | "Get a Quote" section at the bottom of the homepage. Name/email/phone/message fields + honeypot anti-spam field, submits via EmailJS (see Stack & Tools). |
+| `QuoteForm.tsx` | "Get a Quote" section at the bottom of the homepage, `id="quote"` (scroll target for the hero's links). Name/email/phone/message fields + honeypot anti-spam field, submits via EmailJS (see Stack & Tools). |
+| `Footer.tsx` | Site-wide footer, rendered in `__root.tsx` below `<Outlet />` (appears on every page). Dark bg matching the hero. Dynamic copyright year + "C and R Window Cleaning, LLC", Facebook/Instagram icon buttons on the right — hand-drawn inline SVGs (`lucide-react` dropped brand/social icons from its set), hrefs are still placeholder `#` and need real social URLs. |
 
 ### shadcn Primitives (`/src/components/ui/`)
 `button` · `input` · `textarea` · `label`

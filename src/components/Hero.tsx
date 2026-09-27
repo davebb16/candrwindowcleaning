@@ -1,4 +1,4 @@
-import { ArrowDown, Menu } from 'lucide-react'
+import { ArrowDown } from 'lucide-react'
 import heroImage from '@/assets/images/hero.jpg'
 import logo from '@/assets/images/logo.svg'
 import heroLogo from '@/assets/images/hero-logo.png'
@@ -24,17 +24,12 @@ export function Hero() {
       <nav className="relative z-20 border-b border-white/15 px-6 py-6 md:px-10 lg:px-16">
         <div className="mx-auto flex max-w-8xl items-center justify-between">
           <img src={logo} alt="C&R Window Cleaners" className="h-9 w-auto invert md:h-10" />
-          <div className="flex items-center gap-6">
-            <a
-              href="#quote"
-              className="rounded-full bg-white px-5 py-2 text-xs font-medium tracking-[0.2em] text-black uppercase transition-colors duration-300 hover:bg-white/85"
-            >
-              Get a Quote
-            </a>
-            <button type="button" aria-label="Open menu" className="text-white">
-              <Menu className="h-5 w-5" strokeWidth={1.5} />
-            </button>
-          </div>
+          <a
+            href="#quote"
+            className="rounded-full bg-white px-5 py-2 text-xs font-medium tracking-[0.2em] text-black uppercase transition-colors duration-300 hover:bg-white/85"
+          >
+            Get a Quote
+          </a>
         </div>
       </nav>
 
