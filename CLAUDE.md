@@ -73,7 +73,7 @@ You are working in the **C&R Window Cleaners** site — a React + Vite + TypeScr
 ### Custom (`/src/components/`)
 | Component | Purpose |
 |---|---|
-| `Hero.tsx` | Full-viewport homepage hero — dark editorial style, transparent nav (logo, "Get a Quote", menu), large centered `font-serif` headline with intro copy + scroll cue stacked beneath it. Background photo is `hero.jpg`; nav logo is `logo.svg`. |
+| `Hero.tsx` | Full-viewport homepage hero — dark editorial style, transparent nav (logo, "Get a Quote", menu), vertically centered content with the large logo lockup on the left and intro copy + scroll cue in a column on the right. Background photo is `hero.jpg`; nav logo is `logo.svg`; main hero logo lockup is `hero-logo.png`. |
 | `WhatWeDo.tsx` | "What We Do" section (light bg) below the hero. Heading + a 4-item icon grid: Commercial, Residential, Apartments, Storefronts (Lucide icons). |
 | `WhyChooseUs.tsx` | "Why Choose Us" section (dark bg, matches hero tone) — single large `font-serif` value-prop statement, centered. |
 | `QuoteForm.tsx` | "Get a Quote" section at the bottom of the homepage. Name/email/phone/message fields + honeypot anti-spam field, submits via EmailJS (see Stack & Tools). |
@@ -85,7 +85,7 @@ You are working in the **C&R Window Cleaners** site — a React + Vite + TypeScr
 - Import images as ES modules: `import img from "@/assets/images/file.webp"`
 - `hero.jpg` — homepage hero background (storefront glass exterior), used in `Hero.tsx`. Source is 1600×1200 (605KB, JPEG). At full-bleed `object-cover` this is fine on typical laptop/desktop widths, especially since the hero applies a heavy dark overlay for text legibility — but on very large/4K monitors (~2560px+ CSS width) it will be upscaled 1.6–2.4x and can look soft in brighter/detailed areas (sky, glass highlights). Swap in a higher-res version (2400–3200px+ wide, ideally closer to 16:9 to reduce top/bottom cropping) if/when one becomes available — same `import` + filename, no code changes needed.
 - `logo.svg` — the "CR" monogram, used in `Hero.tsx`'s nav. Shapes have no explicit `fill`, so they default to solid black (SVG spec default) — for a dark background it's rendered with Tailwind's `invert` filter class (`className="invert"`) to flip it white. If it's ever placed on a light background, drop the `invert` class instead.
-- `hero-logo.png` — full logo lockup (CR monogram + "WINDOW CLEANERS"), pre-colored white on a transparent background. **Not currently used** — the hero shows a large centered text headline instead. Kept around in case it's wanted again; no filter needed, only use on dark backgrounds since it's baked white.
+- `hero-logo.png` — full logo lockup (CR monogram + "WINDOW CLEANERS"), pre-colored white on a transparent background. Used as the large mark in the hero. No filter needed — only use it on dark backgrounds, since it's baked white.
 
 ## Routes (`/src/routes/`)
 | Route file | Path | Purpose |
