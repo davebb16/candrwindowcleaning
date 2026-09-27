@@ -33,7 +33,7 @@ const services = [
 
 export function WhatWeDo() {
   return (
-    <section className="bg-grid bg-background px-6 py-20 md:px-10 md:py-28 lg:px-16">
+    <section className="bg-grid bg-gray-100 px-6 py-20 md:px-10 md:py-28 lg:px-16">
       <div className="mx-auto max-w-8xl">
         <p className="font-serif text-3xl uppercase sm:text-4xl">
           What We Do
@@ -50,7 +50,7 @@ export function WhatWeDo() {
               className="rounded-2xl border border-border bg-background p-8"
             >
               <div className="flex items-start justify-between">
-                <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-muted">
+                <div className="flex h-11 w-11 items-center justify-center rounded-lg border border-border bg-muted">
                   <Icon className="h-5 w-5" strokeWidth={1.5} />
                 </div>
                 <span className="font-serif text-4xl text-foreground/10">

@@ -43,9 +43,9 @@ export function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="border-t border-white/10 bg-neutral-950 px-6 py-8 md:px-10 lg:px-16">
+    <footer className="border-t border-border px-6 py-8 md:px-10 lg:px-16">
       <div className="mx-auto flex max-w-8xl flex-col items-center gap-4 sm:flex-row sm:justify-between">
-        <p className="text-sm text-white/60">
+        <p className="text-sm text-muted-foreground">
           Copyright {year} C and R Window Cleaning, LLC
         </p>
         <div className="flex items-center gap-3">
@@ -54,7 +54,7 @@ export function Footer() {
               key={label}
               href={href}
               aria-label={label}
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/20 text-white/70 transition-colors duration-300 hover:border-white hover:text-white"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground transition-colors duration-300 hover:border-foreground hover:text-foreground"
             >
               <Icon className="h-4 w-4" />
             </a>
