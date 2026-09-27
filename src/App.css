@@ -151,4 +151,12 @@
     @apply mx-auto max-w-8xl px-4 sm:px-6 lg:px-8;
   }
   */
+
+  /* Faint graph-paper grid, for light/white section backgrounds */
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgb(0 0 0 / 4%) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(0 0 0 / 4%) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
 }

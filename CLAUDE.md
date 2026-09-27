@@ -50,7 +50,7 @@ You are working in the **C&R Window Cleaners** site — a React + Vite + TypeScr
 - **Section max-width**: `mx-auto max-w-8xl px-4 sm:px-6 lg:px-8` — `max-w-8xl` (88rem/1408px) is a custom size added via `--container-8xl` in `App.css`'s `@theme inline` block (Tailwind's default scale tops out at `7xl`/80rem)
 - **Responsive breakpoints**: Mobile-first. `md:` for desktop nav visibility, `lg:` for layout shifts
 - **CSS utility classes** (defined in `App.css` `@layer components`):
-  <!-- Add project-specific utility classes as they are created -->
+  - `.bg-grid` — faint graph-paper grid background (48px cells, 4% black lines). Applied to light/white sections (`WhatWeDo`, `QuoteForm`) alongside `bg-background` to break up flat white. Don't use on dark sections — the lines are tuned for a light background.
 
 ## Project Structure
 ```
@@ -74,7 +74,7 @@ You are working in the **C&R Window Cleaners** site — a React + Vite + TypeScr
 | Component | Purpose |
 |---|---|
 | `Hero.tsx` | Full-viewport homepage hero — dark editorial style, transparent nav (logo, "Get a Quote" — no hamburger/menu button), vertically centered content with the large logo lockup on the left and intro copy + clickable scroll cue in a column on the right. Both "Get a Quote" and "Scroll" link to `#quote` (see QuoteForm). Background photo is `hero.jpg`; nav logo is `logo.svg`; main hero logo lockup is `hero-logo.png`. |
-| `WhatWeDo.tsx` | "What We Do" section (dark bg, matches hero/WhyChooseUs tone) below the hero. Heading + a 4-card grid (Commercial, Residential, Apartments, Storefronts) — each card has an icon badge, a faint numbered watermark (01–04), a title, and a short description. |
+| `WhatWeDo.tsx` | "What We Do" section (light bg, `bg-grid`) below the hero. Heading + a 4-card grid (Commercial, Residential, Apartments, Storefronts) — each card has an icon badge, a faint numbered watermark (01–04), a title, and a short description. |
 | `WhyChooseUs.tsx` | "Why Choose Us" section (dark bg, matches hero tone) — single large `font-serif` value-prop statement, centered. |
 | `QuoteForm.tsx` | "Get a Quote" section at the bottom of the homepage, `id="quote"` (scroll target for the hero's links). Name/email/phone/message fields + honeypot anti-spam field, submits via EmailJS (see Stack & Tools). |
 | `Footer.tsx` | Site-wide footer, rendered in `__root.tsx` below `<Outlet />` (appears on every page). Dark bg matching the hero. Dynamic copyright year + "C and R Window Cleaning, LLC", Facebook/Instagram icon buttons on the right — hand-drawn inline SVGs (`lucide-react` dropped brand/social icons from its set), hrefs are still placeholder `#` and need real social URLs. |
