@@ -33,14 +33,15 @@ const services = [
 
 export function WhatWeDo() {
   return (
-    <section className="bg-grid bg-gray-100 px-6 py-20 md:px-10 md:py-28 lg:px-16 dark:bg-gray-950">
+    <section className="bg-grid bg-gray-100 px-6 py-20 md:px-10 md:py-28 lg:px-16 dark:bg-background">
       <div className="mx-auto max-w-8xl">
         <p className="font-serif text-3xl uppercase sm:text-4xl">
           What We Do
         </p>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-          From single-family homes to multi-story storefronts, we bring the
-          same careful, streak-free finish to every kind of property.
+          From single-family homes to multi-story storefronts across the
+          Kansas City metro, every property gets the same standard:
+          spotless, streak-free glass — without a price tag to match.
         </p>
 
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">

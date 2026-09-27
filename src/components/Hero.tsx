@@ -28,7 +28,7 @@ export function Hero() {
             href="#quote"
             className="rounded-full bg-white px-5 py-2 text-xs font-medium tracking-[0.2em] text-black uppercase transition-colors duration-300 hover:bg-white/85"
           >
-            Get a Quote
+            Get a Free Quote
           </a>
         </div>
       </nav>
@@ -48,9 +48,10 @@ export function Hero() {
               For Every Window
             </p>
             <p className="mt-4 text-sm leading-relaxed text-white/70">
-              C&R Window Cleaners brings meticulous care to every pane,
-              pairing trusted craftsmanship with a spotless, streak-free
-              finish — for homes and businesses that expect nothing less.
+              The highest standard in Kansas City window cleaning —
+              without the high-end price tag. Spotless, streak-free glass
+              for homes and businesses across the metro, done right the
+              first time.
             </p>
             <a
               href="#quote"

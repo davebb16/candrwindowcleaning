@@ -51,8 +51,9 @@ export function QuoteForm() {
           Get a Quote
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-          Tell us a bit about your property and what you'd like cleaned —
-          we'll get back to you with a free, no-obligation quote.
+          Tell us about your property and what you'd like cleaned. We'll
+          follow up with a free, no-obligation quote — fair pricing, no
+          surprises.
         </p>
 
         <form onSubmit={handleSubmit} className="mt-10 space-y-6">
@@ -101,7 +102,7 @@ export function QuoteForm() {
           </div>
 
           <Button type="submit" disabled={status === 'submitting'}>
-            {status === 'submitting' ? 'Sending…' : 'Send Request'}
+            {status === 'submitting' ? 'Sending…' : 'Get My Free Quote'}
           </Button>
 
           {status === 'success' && (
