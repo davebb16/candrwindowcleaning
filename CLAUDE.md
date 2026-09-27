@@ -7,7 +7,7 @@ You are working in the **C&R Window Cleaners** site — a React + Vite + TypeScr
 The site's angle: **C&R is the highest-quality window cleaning service in the Kansas City metro, at a fair price.** Every section should reinforce quality + fair price + KC locality — that's why "Kansas City" / "KC metro" appears in the hero, `WhatWeDo`, and `WhyChooseUs` copy (`<title>` and meta description too, in `index.html`).
 - **Never invent unverifiable claims** when writing or editing copy: no fabricated review counts, "#1 in KC" / "top-rated" claims, awards, licensing/insurance/bonding status, or specific guarantee policies (e.g. "we re-clean free if you're not satisfied") unless the user has explicitly confirmed it's true. Those are factual/legal claims about the business, not copywriting choices — get sign-off first, same way `.env` credentials need the user to provide them.
 - Subjective superlatives tied to the stated angle ("the highest standard," "spotless, no exceptions") are fine — that's the agreed positioning, not a claim needing external proof.
-- `WhyChooseUs.tsx`'s 3 proof points (quality standard / pricing transparency / local-KC) are the place to slot in a real guarantee, credentials, or stats once the user provides them.
+- `WhyChooseUs.tsx`'s proof points (quality standard / pricing transparency / local-KC / longevity via included seal+track cleaning) are the place to slot in a real guarantee, credentials, or stats once the user provides them.
 
 ## Stack & Tools
 - React 19+ (hooks only)
@@ -89,7 +89,7 @@ The site's angle: **C&R is the highest-quality window cleaning service in the Ka
 |---|---|
 | `Hero.tsx` | Full-viewport homepage hero — dark editorial style, transparent nav (logo, "Get a Quote" — no hamburger/menu button), vertically centered content with the large logo lockup on the left and intro copy + clickable scroll cue in a column on the right. Both "Get a Quote" and "Scroll" link to `#quote` (see QuoteForm). Background photo is `hero.jpg`; nav logo is `logo.svg`; main hero logo lockup is `hero-logo.png`. |
 | `WhatWeDo.tsx` | "What We Do" section (light bg, `bg-grid`) below the hero. Heading + a 4-card grid (Commercial, Residential, Apartments, Storefronts) — each card has an icon badge, a faint numbered watermark (01–04), a title, and a short description. |
-| `WhyChooseUs.tsx` | "Why Choose Us" section (dark bg, matches hero tone) — large `font-serif` reframe statement, centered, plus a 3-column row of short proof points (quality standard, pricing transparency, local/KC). |
+| `WhyChooseUs.tsx` | "Why Choose Us" section (dark bg, matches hero tone) — large `font-serif` reframe statement, centered, plus a 4-column row of short proof points (quality standard, pricing transparency, local/KC, longevity via included seal+track cleaning). |
 | `QuoteForm.tsx` | "Get a Quote" section at the bottom of the homepage, `id="quote"` (scroll target for the hero's links). Name/email/phone/message fields + honeypot anti-spam field, submits via EmailJS (see Stack & Tools). |
 | `Footer.tsx` | Site-wide footer, rendered in `__root.tsx` below `<Outlet />` (appears on every page). No background of its own — just a `border-t`, so it blends with whatever section it follows. Dynamic copyright year + "C and R Window Cleaning, LLC", Facebook/Instagram icon buttons on the right — hand-drawn inline SVGs (`lucide-react` dropped brand/social icons from its set), hrefs are still placeholder `#` and need real social URLs. |
 

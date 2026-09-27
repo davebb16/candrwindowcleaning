@@ -14,6 +14,11 @@ const reasons = [
     description:
       'Proudly serving homes and businesses across the entire Kansas City metro.',
   },
+  {
+    title: 'Built to last, not just shine',
+    description:
+      'Every visit includes seal and track cleaning, so your windows don’t just look better — they last longer, too.',
+  },
 ]
 
 export function WhyChooseUs() {
@@ -28,7 +33,7 @@ export function WhyChooseUs() {
           With C&R, you don't.
         </p>
 
-        <div className="mx-auto mt-16 grid max-w-4xl grid-cols-1 gap-10 text-left sm:grid-cols-3 sm:gap-8">
+        <div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-10 text-left sm:grid-cols-2 sm:gap-8 lg:grid-cols-4">
           {reasons.map(({ title, description }) => (
             <div key={title}>
               <p className="font-serif text-lg">{title}</p>
