@@ -1,4 +1,4 @@
-import { Menu } from 'lucide-react'
+import { ArrowDown, Menu } from 'lucide-react'
 import heroImage from '@/assets/images/hero.jpg'
 import logo from '@/assets/images/logo.svg'
 import heroLogo from '@/assets/images/hero-logo.png'
@@ -57,9 +57,13 @@ export function Hero() {
               pairing trusted craftsmanship with a spotless, streak-free
               finish — for homes and businesses that expect nothing less.
             </p>
-            <p className="mt-8 text-xs tracking-[0.3em] text-white/60 uppercase lg:mt-24">
+            <a
+              href="#quote"
+              className="mt-8 flex items-center gap-2 text-xs tracking-[0.3em] text-white/60 uppercase transition-colors duration-300 hover:text-white lg:mt-24"
+            >
               Scroll
-            </p>
+              <ArrowDown className="h-3.5 w-3.5" strokeWidth={1.5} />
+            </a>
           </div>
         </div>
       </div>
