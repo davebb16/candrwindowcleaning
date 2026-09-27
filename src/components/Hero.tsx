@@ -43,11 +43,11 @@ export function Hero() {
           <img
             src={heroLogo}
             alt="C&R Window Cleaners"
-            className="w-64 select-none sm:w-80 md:w-96 lg:w-[32rem]"
+            className="w-64 select-none sm:w-80 md:w-96 lg:w-[24rem]"
           />
 
-          <div className="max-w-xs text-left text-white lg:max-w-sm">
-            <p className="font-serif text-lg leading-snug uppercase sm:text-xl">
+          <div className="max-w-xs text-left text-white lg:max-w-sm lg:flex lg:flex-col lg:gap-inherit">
+            <p className="font-serif text-lg leading-snug uppercase sm:text-xl lg:text-2xl">
               Crystal Clear Care
               <br />
               For Every Window
@@ -57,7 +57,7 @@ export function Hero() {
               pairing trusted craftsmanship with a spotless, streak-free
               finish — for homes and businesses that expect nothing less.
             </p>
-            <p className="mt-8 lg:mt-16 text-xs tracking-[0.3em] text-white/60 uppercase">
+            <p className="mt-8 lg:mt-24 text-xs tracking-[0.3em] text-white/60 uppercase">
               Scroll
             </p>
           </div>
