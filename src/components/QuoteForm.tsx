@@ -45,7 +45,7 @@ export function QuoteForm() {
   }
 
   return (
-    <section className="bg-background px-6 py-20 md:px-10 lg:px-16 md:py-28">
+    <section id="quote" className="bg-background px-6 py-20 md:px-10 lg:px-16 md:py-28">
       <div className="mx-auto max-w-2xl">
         <p className="font-serif text-3xl uppercase sm:text-4xl">
           Get a Quote

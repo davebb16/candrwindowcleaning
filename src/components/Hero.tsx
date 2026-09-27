@@ -25,12 +25,12 @@ export function Hero() {
         <div className="mx-auto flex max-w-8xl items-center justify-between">
           <img src={logo} alt="C&R Window Cleaners" className="h-9 w-auto invert md:h-10" />
           <div className="flex items-center gap-6">
-            <button
-              type="button"
-              className="rounded-full border border-white/40 px-5 py-2 text-xs font-medium tracking-[0.2em] text-white uppercase transition-colors duration-300 hover:bg-white hover:text-black"
+            <a
+              href="#quote"
+              className="rounded-full bg-white px-5 py-2 text-xs font-medium tracking-[0.2em] text-black uppercase transition-colors duration-300 hover:bg-white/85"
             >
               Get a Quote
-            </button>
+            </a>
             <button type="button" aria-label="Open menu" className="text-white">
               <Menu className="h-5 w-5" strokeWidth={1.5} />
             </button>
