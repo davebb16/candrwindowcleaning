@@ -43,9 +43,9 @@ export function Hero() {
 
           <div className="max-w-xs text-left text-white lg:flex lg:max-w-sm lg:flex-col">
             <p className="font-serif text-lg leading-snug uppercase sm:text-xl lg:text-2xl">
-              Streak-Free Today
+              Premium Window Cleaning
               <br />
-              Lasting Tomorrow
+              Without the Premium price
             </p>
             <p className="mt-4 text-sm leading-relaxed text-white/70">
               The highest standard in Kansas City window cleaning —

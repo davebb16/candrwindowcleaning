@@ -23,8 +23,18 @@ const reasons = [
 
 export function WhyChooseUs() {
   return (
-    <section className="bg-gray-950 dark:bg-background px-6 py-20 text-white md:px-10 md:py-28 lg:px-16">
-      <div className="mx-auto max-w-8xl text-center">
+    <section className="relative overflow-hidden px-6 py-20 text-white md:px-10 md:py-28 lg:px-16">
+      {/* TODO: replace with <img src={...} alt="..." className="absolute inset-0 h-full w-full object-cover" /> */}
+      <div
+        aria-hidden
+        className="absolute inset-0 flex items-center justify-center bg-blue-500 text-sm font-medium tracking-widest text-white uppercase"
+      >
+        Photo: Why Choose Us Background
+      </div>
+      {/* Legibility overlay, same pattern as Hero */}
+      <div aria-hidden className="absolute inset-0 bg-black/70" />
+
+      <div className="relative mx-auto max-w-8xl text-center">
         <p className="text-xs tracking-[0.3em] text-white/60 uppercase">
           Why Choose Us
         </p>

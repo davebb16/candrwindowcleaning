@@ -48,20 +48,30 @@ export function WhatWeDo() {
           {services.map(({ number, label, icon: Icon, description }) => (
             <div
               key={label}
-              className="rounded-2xl border border-border bg-background p-8"
+              className="overflow-hidden rounded-2xl border border-border bg-background"
             >
-              <div className="flex items-start justify-between">
-                <div className="flex h-11 w-11 items-center justify-center rounded-lg border border-border bg-muted">
-                  <Icon className="h-5 w-5" strokeWidth={1.5} />
-                </div>
-                <span className="font-serif text-4xl text-foreground/10">
-                  {number}
-                </span>
+              {/* TODO: replace with <img src={...} alt="..." className="aspect-[4/3] w-full object-cover" /> */}
+              <div
+                aria-hidden
+                className="flex aspect-[4/3] items-center justify-center bg-blue-500 text-xs font-medium tracking-widest text-white uppercase"
+              >
+                Photo: {label}
               </div>
-              <p className="mt-6 text-lg font-semibold">{label}</p>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                {description}
-              </p>
+
+              <div className="p-8">
+                <div className="flex items-start justify-between">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-lg border border-border bg-muted">
+                    <Icon className="h-5 w-5" strokeWidth={1.5} />
+                  </div>
+                  <span className="font-serif text-4xl text-foreground/10">
+                    {number}
+                  </span>
+                </div>
+                <p className="mt-6 text-lg font-semibold">{label}</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  {description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
