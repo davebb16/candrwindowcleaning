@@ -50,7 +50,7 @@ You are working in the **C&R Window Cleaners** site — a React + Vite + TypeScr
 - **Section max-width**: `mx-auto max-w-8xl px-4 sm:px-6 lg:px-8` — `max-w-8xl` (88rem/1408px) is a custom size added via `--container-8xl` in `App.css`'s `@theme inline` block (Tailwind's default scale tops out at `7xl`/80rem)
 - **Responsive breakpoints**: Mobile-first. `md:` for desktop nav visibility, `lg:` for layout shifts
 - **CSS utility classes** (defined in `App.css` `@layer components`):
-  - `.bg-grid` — faint graph-paper grid background (48px cells). Black lines at 4% opacity in light mode, white at 6% in dark mode (auto-flips, see Theming below) — no extra class needed. Applied to light/white sections (`WhatWeDo`, `QuoteForm`) alongside `bg-background`.
+  - `.bg-grid` — faint graph-paper grid background (24px cells). Black lines at 4% opacity in light mode, white at 3% in dark mode (auto-flips, see Theming below) — no extra class needed. Applied to light/white sections (`WhatWeDo`, `QuoteForm`) alongside `bg-background`.
 
 ## Theming (Light/Dark Mode)
 - Site-wide light/dark theme follows the **OS/browser `prefers-color-scheme` setting** — there is no manual toggle and no JS involved. It's pure CSS: `:root` in `App.css` holds the light palette, and `@media (prefers-color-scheme: dark) { :root { ... } }` overrides those same custom properties for dark. Since every `bg-*`/`text-*`/`border-*` token (`background`, `foreground`, `card`, `muted`, `border`, `input`, `primary`, etc.) is mapped once in `@theme inline`, any component using the semantic tokens (`bg-background`, `text-foreground`, `text-muted-foreground`, `border-border`, shadcn's `Button`/`Input`/`Textarea`/`Label`) gets dark mode for free.
