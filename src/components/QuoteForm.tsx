@@ -105,7 +105,7 @@ export function QuoteForm() {
           </Button>
 
           {status === 'success' && (
-            <p className="text-sm text-emerald-600" role="status">
+            <p className="text-sm text-emerald-600 dark:text-emerald-400" role="status">
               Thanks — we've received your request and will be in touch
               soon.
             </p>
