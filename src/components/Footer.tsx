@@ -46,7 +46,7 @@ export function Footer() {
     <footer className="border-t border-border px-6 py-8 md:px-10 lg:px-16">
       <div className="mx-auto flex max-w-8xl flex-col items-center gap-4 sm:flex-row sm:justify-between">
         <p className="text-sm text-muted-foreground">
-          Copyright {year} C and R Window Cleaning, LLC
+        © {year} C and R Window Cleaning, LLC
         </p>
         <div className="flex items-center gap-3">
           {socialLinks.map(({ label, href, icon: Icon }) => (
