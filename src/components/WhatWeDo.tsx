@@ -52,11 +52,11 @@ export function WhatWeDo() {
           spotless, streak-free glass — without a price tag to match.
         </p>
 
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid grid-cols-1 divide-y divide-border sm:grid-cols-2 sm:gap-6 sm:divide-y-0 lg:grid-cols-4">
           {services.map(({ number, label, icon: Icon, image, description }) => (
             <div
               key={label}
-              className="overflow-hidden rounded-2xl border border-border bg-background"
+              className="pt-8 first:pt-0 sm:overflow-hidden sm:rounded-2xl sm:border sm:border-border sm:bg-background sm:pt-0"
             >
               <img
                 src={image}
