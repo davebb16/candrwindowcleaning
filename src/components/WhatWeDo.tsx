@@ -6,7 +6,6 @@ import storefrontsImage from '@/assets/images/whatwedo-storefronts.jpg'
 
 const services = [
   {
-    number: '01',
     label: 'Commercial',
     icon: Building2,
     image: commercialImage,
@@ -14,7 +13,6 @@ const services = [
       'Office buildings and multi-story exteriors. We work around your hours so business never skips a beat.',
   },
   {
-    number: '02',
     label: 'Residential',
     icon: Home,
     image: residentialImage,
@@ -22,7 +20,6 @@ const services = [
       'Every window, sill, and screen — inside and out — for a spotless, streak-free finish you can see from the curb.',
   },
   {
-    number: '03',
     label: 'Apartments',
     icon: BuildingComplex,
     image: apartmentsImage,
@@ -30,7 +27,6 @@ const services = [
       'Scheduled service for property managers and complexes, keeping every unit and common area looking its best.',
   },
   {
-    number: '04',
     label: 'Storefronts',
     icon: Store,
     image: storefrontsImage,
@@ -53,7 +49,7 @@ export function WhatWeDo() {
         </p>
 
         <div className="mt-12 grid grid-cols-1 divide-y divide-border sm:grid-cols-2 sm:gap-6 sm:divide-y-0 lg:grid-cols-4">
-          {services.map(({ number, label, icon: Icon, image, description }) => (
+          {services.map(({ label, icon: Icon, image, description }) => (
             <div
               key={label}
               className="pt-8 first:pt-0 sm:overflow-hidden sm:rounded-2xl sm:border sm:border-border sm:bg-background sm:pt-0"
@@ -65,13 +61,8 @@ export function WhatWeDo() {
               />
 
               <div className="p-8">
-                <div className="flex items-start justify-between">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-brand/10">
-                    <Icon className="h-5 w-5 text-brand" strokeWidth={1.5} />
-                  </div>
-                  <span className="font-serif text-4xl text-foreground/10">
-                    {number}
-                  </span>
+                <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-brand/10">
+                  <Icon className="h-5 w-5 text-brand" strokeWidth={1.5} />
                 </div>
                 <p className="mt-6 text-lg font-semibold">{label}</p>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
