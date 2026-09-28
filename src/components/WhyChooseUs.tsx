@@ -5,7 +5,7 @@ const reasons = [
   {
     title: 'Built to last, not just shine',
     description:
-      'Every visit includes seal and track cleaning, so your windows don’t just look better — they last longer, too.',
+      'Every visit includes seal and track cleaning, so your windows don’t only look better, they also last longer.',
   },
   {
     title: 'Locally owned in KC',
