@@ -46,7 +46,10 @@ export function QuoteForm() {
   return (
     <section id="quote" className="bg-grid bg-background px-6 py-20 md:px-10 lg:px-16 md:py-28">
       <div className="mx-auto max-w-2xl">
-        <p className="font-serif text-3xl uppercase sm:text-4xl">
+        <p className="text-xs tracking-[0.3em] text-brand uppercase">
+          Request a Quote
+        </p>
+        <p className="mt-3 font-serif text-3xl uppercase sm:text-4xl">
           Get a Quote
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -103,7 +106,7 @@ export function QuoteForm() {
           <button
             type="submit"
             disabled={status === 'submitting'}
-            className="rounded-full bg-foreground px-5 py-2 text-xs font-medium tracking-[0.2em] text-background uppercase transition-colors duration-300 hover:bg-foreground/85 disabled:pointer-events-none disabled:opacity-50"
+            className="rounded-full bg-foreground px-5 py-2 text-xs font-medium tracking-[0.2em] text-background uppercase transition-colors duration-300 hover:bg-foreground/85 focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50"
           >
             {status === 'submitting' ? 'Sending…' : 'Get My Free Quote'}
           </button>

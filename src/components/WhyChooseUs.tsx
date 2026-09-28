@@ -1,13 +1,11 @@
 const reasons = [
+  
+  
+  
   {
-    title: 'Spotless, no exceptions',
+    title: 'Built to last, not just shine',
     description:
-      "If it's not streak-free, we're not done. That's the standard on every job, every time.",
-  },
-  {
-    title: 'Fair, upfront pricing',
-    description:
-      'You get a clear quote before we start — no hidden fees, no surprise upsells.',
+      'Every visit includes seal and track cleaning, so your windows don’t just look better — they last longer, too.',
   },
   {
     title: 'Locally owned in KC',
@@ -15,9 +13,14 @@ const reasons = [
       'Proudly serving homes and businesses across the entire Kansas City metro.',
   },
   {
-    title: 'Built to last, not just shine',
+    title: 'Fair, upfront pricing',
     description:
-      'Every visit includes seal and track cleaning, so your windows don’t just look better — they last longer, too.',
+      'You get a clear quote before we start — no hidden fees, no surprise upsells.',
+  },
+  {
+    title: 'Spotless, no exceptions',
+    description:
+      "If it's not streak-free, we're not done. That's the standard on every job, every time.",
   },
 ]
 
@@ -26,7 +29,7 @@ export function WhyChooseUs() {
     <section className="relative overflow-hidden px-6 py-20 bg-background border border-border text-white md:px-10 md:py-28 lg:px-16">
 
       <div className="relative mx-auto max-w-8xl text-center">
-        <p className="text-xs tracking-[0.3em] text-blue-400 uppercase">
+        <p className="text-xs tracking-[0.3em] text-brand uppercase">
           Why Choose Us
         </p>
         <p className="mx-auto mt-6 max-w-3xl font-serif text-3xl leading-snug sm:text-4xl md:text-5xl">
