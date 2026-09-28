@@ -74,7 +74,13 @@ export function QuoteForm() {
           <div className="grid gap-6 sm:grid-cols-2">
             <div className="space-y-2">
               <Label htmlFor="from_name">Name</Label>
-              <Input id="from_name" name="from_name" type="text" required />
+              <Input
+                id="from_name"
+                name="from_name"
+                type="text"
+                placeholder="Jane Smith"
+                required
+              />
             </div>
             <div className="space-y-2">
               <Label htmlFor="from_email">Email</Label>
@@ -82,6 +88,7 @@ export function QuoteForm() {
                 id="from_email"
                 name="from_email"
                 type="email"
+                placeholder="jane@example.com"
                 required
               />
             </div>
@@ -89,7 +96,12 @@ export function QuoteForm() {
 
           <div className="space-y-2">
             <Label htmlFor="phone">Phone (optional)</Label>
-            <Input id="phone" name="phone" type="tel" />
+            <Input
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder="(816) 555-0123"
+            />
           </div>
 
           <div className="space-y-2">
