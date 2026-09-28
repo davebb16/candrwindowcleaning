@@ -39,9 +39,9 @@ export function WhatWeDo() {
   return (
     <section className="bg-grid bg-gray-100 px-6 py-20 md:px-10 md:py-28 lg:px-16 dark:bg-background">
       <div className="mx-auto max-w-8xl">
-        <p className="font-serif text-3xl uppercase sm:text-4xl">
+        <h2 className="font-serif text-3xl uppercase sm:text-4xl">
           What We Do
-        </p>
+        </h2>
         <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted-foreground">
           From single-family homes to multi-story storefronts across the
           Kansas City metro, every property gets the same standard:
@@ -64,7 +64,7 @@ export function WhatWeDo() {
                 <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-brand/10">
                   <Icon className="h-5 w-5 text-brand" strokeWidth={1.5} />
                 </div>
-                <p className="mt-6 text-lg font-semibold">{label}</p>
+                <h3 className="mt-6 text-lg font-semibold">{label}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   {description}
                 </p>

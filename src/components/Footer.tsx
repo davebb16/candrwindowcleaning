@@ -47,9 +47,15 @@ export function Footer() {
   return (
     <footer className="border-t border-border px-6 py-8 md:px-10 lg:px-16">
       <div className="mx-auto flex max-w-8xl flex-col items-center gap-4 sm:flex-row sm:justify-between">
-        <p className="text-xs text-muted-foreground/60">
-          © {year} C and R Window Cleaning, LLC
-        </p>
+        <div className="flex flex-col items-center gap-1 text-xs text-muted-foreground/60 sm:items-start">
+          <p>© {year} C and R Window Cleaning, LLC</p>
+          <a
+            href="tel:+17853414251"
+            className="transition-colors duration-300 hover:text-brand"
+          >
+            (785) 341-4251
+          </a>
+        </div>
         <div className="flex items-center gap-3">
           {socialLinks.map(({ label, href, icon: Icon }) => (
             <a

@@ -32,15 +32,15 @@ export function WhyChooseUs() {
         <p className="text-xs tracking-[0.3em] text-brand uppercase">
           Why Choose Us
         </p>
-        <p className="mx-auto mt-6 max-w-3xl font-serif text-3xl leading-snug sm:text-4xl md:text-5xl">
+        <h2 className="mx-auto mt-6 max-w-3xl font-serif text-3xl leading-snug sm:text-4xl md:text-5xl">
           You shouldn't have to choose between spotless and affordable.
           With C&R, you don't.
-        </p>
+        </h2>
 
         <div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-10 text-left sm:grid-cols-2 sm:gap-8 lg:grid-cols-4">
           {reasons.map(({ title, description }) => (
             <div key={title}>
-              <p className="font-serif text-lg">{title}</p>
+              <h3 className="font-serif text-lg">{title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-white/60">
                 {description}
               </p>

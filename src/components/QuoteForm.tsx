@@ -49,9 +49,9 @@ export function QuoteForm() {
         <p className="text-xs tracking-[0.3em] text-brand uppercase">
           Ready to get started?
         </p>
-        <p className="mt-3 font-serif text-3xl uppercase sm:text-4xl">
+        <h2 className="mt-3 font-serif text-3xl uppercase sm:text-4xl">
           Get a Quote
-        </p>
+        </h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Tell us about your property and what you'd like cleaned. We'll
           follow up with a free, no-obligation quote — fair pricing, no
@@ -124,7 +124,7 @@ export function QuoteForm() {
           <button
             type="submit"
             disabled={status === 'submitting'}
-            className="rounded-full bg-foreground px-5 py-2 text-xs font-medium tracking-[0.2em] text-background uppercase transition-colors duration-300 hover:bg-foreground/85 focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50"
+            className="rounded-full bg-brand px-5 py-2 text-xs font-medium tracking-[0.2em] text-brand-foreground uppercase transition-colors duration-300 hover:bg-brand/85 focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50"
           >
             {status === 'submitting' ? 'Sending…' : 'Get My Free Quote'}
           </button>

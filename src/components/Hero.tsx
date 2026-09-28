@@ -42,11 +42,11 @@ export function Hero() {
           />
 
           <div className="max-w-xs text-left text-white lg:flex lg:max-w-sm lg:flex-col">
-            <p className="font-serif text-lg leading-snug uppercase sm:text-xl lg:text-2xl">
+            <h1 className="font-serif text-lg leading-snug uppercase sm:text-xl lg:text-2xl">
               Premium Window Cleaning
               <br />
               Without the Premium price
-            </p>
+            </h1>
             <p className="mt-4 text-sm leading-relaxed text-white/70">
               The highest standard in Kansas City window cleaning —
               without the high-end price tag. Spotless, streak-free glass
