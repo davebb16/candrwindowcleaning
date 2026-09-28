@@ -72,7 +72,7 @@
     --destructive: oklch(0.577 0.245 27.325);
     --border: oklch(0.922 0 0);
     --input: oklch(0.922 0 0);
-    --ring: oklch(0.708 0 0);
+    --ring: var(--brand);
     --chart-1: oklch(0.87 0 0);
     --chart-2: oklch(0.556 0 0);
     --chart-3: oklch(0.439 0 0);
@@ -88,10 +88,10 @@
     --sidebar-border: oklch(0.922 0 0);
     --sidebar-ring: oklch(0.708 0 0);
 
-    /* Project brand colors — defined but currently UNUSED (removed from every
-       component per client request, "try removing all the blue accents").
-       Left here, inert, in case the blue accent gets reinstated later —
-       see git history around "remove blue accents" for what referenced it. */
+    /* Project brand colors — a restrained blue accent, used sparingly
+       (icon badges, focus rings) per the "just enough to break it up" brief.
+       Tailwind blue-500 in light mode; overridden to blue-400 in dark mode
+       below since a lighter tint reads better against dark backgrounds. */
     --brand: #3b82f6;
     --brand-foreground: #ffffff;
 }
@@ -117,7 +117,7 @@
     --destructive: oklch(0.704 0.191 22.216);
     --border: oklch(1 0 0 / 10%);
     --input: oklch(1 0 0 / 15%);
-    --ring: oklch(0.556 0 0);
+    --ring: var(--brand);
     --chart-1: oklch(0.87 0 0);
     --chart-2: oklch(0.556 0 0);
     --chart-3: oklch(0.439 0 0);
@@ -131,6 +131,10 @@
     --sidebar-accent-foreground: oklch(0.985 0 0);
     --sidebar-border: oklch(1 0 0 / 10%);
     --sidebar-ring: oklch(0.556 0 0);
+
+    /* Tailwind blue-400 — lighter than the light-mode blue-500 so the
+       accent stays visible/legible against dark backgrounds */
+    --brand: #60a5fa;
   }
 }
 

@@ -61,8 +61,8 @@ export function WhatWeDo() {
               />
 
               <div className="p-8">
-                <div className="flex h-11 w-11 items-center justify-center rounded-lg border border-border bg-muted">
-                  <Icon className="h-5 w-5" strokeWidth={1.5} />
+                <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-brand/10">
+                  <Icon className="h-5 w-5 text-brand" strokeWidth={1.5} />
                 </div>
                 <p className="mt-6 text-lg font-semibold">{label}</p>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">

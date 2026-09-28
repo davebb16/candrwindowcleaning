@@ -46,7 +46,7 @@ export function QuoteForm() {
   return (
     <section id="quote" className="bg-grid bg-background px-6 py-20 md:px-10 lg:px-16 md:py-28">
       <div className="mx-auto max-w-2xl">
-        <p className="text-xs tracking-[0.3em] text-muted-foreground uppercase">
+        <p className="text-xs tracking-[0.3em] text-brand uppercase">
           Ready to get started?
         </p>
         <p className="mt-3 font-serif text-3xl uppercase sm:text-4xl">
@@ -74,7 +74,7 @@ export function QuoteForm() {
           <div className="grid gap-6 sm:grid-cols-2">
             <div className="space-y-2">
               <Label htmlFor="from_name">
-                Name <span className="text-muted-foreground">*</span>
+                Name <span className="text-brand">*</span>
               </Label>
               <Input
                 id="from_name"
@@ -86,7 +86,7 @@ export function QuoteForm() {
             </div>
             <div className="space-y-2">
               <Label htmlFor="from_email">
-                Email <span className="text-muted-foreground">*</span>
+                Email <span className="text-brand">*</span>
               </Label>
               <Input
                 id="from_email"
@@ -110,7 +110,7 @@ export function QuoteForm() {
 
           <div className="space-y-2">
             <Label htmlFor="message">
-              Message <span className="text-muted-foreground">*</span>
+              Message <span className="text-brand">*</span>
             </Label>
             <Textarea
               id="message"
