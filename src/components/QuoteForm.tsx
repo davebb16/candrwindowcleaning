@@ -47,7 +47,7 @@ export function QuoteForm() {
     <section id="quote" className="bg-grid bg-background px-6 py-20 md:px-10 lg:px-16 md:py-28">
       <div className="mx-auto max-w-2xl">
         <p className="text-xs tracking-[0.3em] text-brand uppercase">
-          Request a Quote
+          Ready to get started?
         </p>
         <p className="mt-3 font-serif text-3xl uppercase sm:text-4xl">
           Get a Quote

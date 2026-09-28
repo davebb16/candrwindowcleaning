@@ -93,8 +93,8 @@ The site's angle: **C&R is the highest-quality window cleaning service in the Ka
 - `logo.svg` — the "CR" monogram, used in `Hero.tsx`'s nav. Shapes have no explicit `fill`, so they default to solid black (SVG spec default) — for a dark background it's rendered with Tailwind's `invert` filter class (`className="invert"`) to flip it white. If it's ever placed on a light background, drop the `invert` class instead.
 - `hero-logo.png` — full logo lockup (CR monogram + "WINDOW CLEANERS"), pre-colored white on a transparent background. Used as the large mark in the hero. No filter needed — only use it on dark backgrounds, since it's baked white.
 - `whatwedo-commercial.jpg`, `whatwedo-residential.jpg`, `whatwedo-apartments.jpg`, `whatwedo-storefronts.jpg` — one per `WhatWeDo.tsx` card, `aspect-[4/3] object-cover` (source images don't need pre-cropping to 4:3 — `object-cover` crops at render time). **None of these are real C&R job photos yet** — stand-ins for authenticity until the user has real photos of their own work to swap in. Same import + filename pattern as `hero.jpg` if replacing (just overwrite the file at the same path — no code changes needed).
-  - `whatwedo-commercial.jpg`, `whatwedo-residential.jpg` — free Unsplash stock (Unsplash License: free for commercial use, no attribution required).
-  - `whatwedo-apartments.jpg` — free Unsplash stock, user-selected and provided directly (same Unsplash License terms).
+  - `whatwedo-commercial.jpg` — free Unsplash stock (Unsplash License: free for commercial use, no attribution required).
+  - `whatwedo-residential.jpg`, `whatwedo-apartments.jpg` — free Unsplash stock, user-selected and provided directly (same Unsplash License terms).
   - `whatwedo-storefronts.jpg` — **user-provided from Vecteezy** (filename prefix `vecteezy_...`), not Unsplash. Vecteezy's free tier typically requires attribution unless the account has a Pro license — this hasn't been verified. Confirm the user's Vecteezy license covers attribution-free commercial use before treating this as license-clear long-term.
 
 ### Pending Photo Assets
