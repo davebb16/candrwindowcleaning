@@ -1,10 +1,15 @@
 import { Building2, Home, BuildingComplex, Store } from 'lucide-react'
+import commercialImage from '@/assets/images/whatwedo-commercial.jpg'
+import residentialImage from '@/assets/images/whatwedo-residential.jpg'
+import apartmentsImage from '@/assets/images/whatwedo-apartments.jpg'
+import storefrontsImage from '@/assets/images/whatwedo-storefronts.jpg'
 
 const services = [
   {
     number: '01',
     label: 'Commercial',
     icon: Building2,
+    image: commercialImage,
     description:
       'Office buildings and multi-story exteriors. We work around your hours so business never skips a beat.',
   },
@@ -12,6 +17,7 @@ const services = [
     number: '02',
     label: 'Residential',
     icon: Home,
+    image: residentialImage,
     description:
       'Every window, sill, and screen — inside and out — for a spotless, streak-free finish you can see from the curb.',
   },
@@ -19,6 +25,7 @@ const services = [
     number: '03',
     label: 'Apartments',
     icon: BuildingComplex,
+    image: apartmentsImage,
     description:
       'Scheduled service for property managers and complexes, keeping every unit and common area looking its best.',
   },
@@ -26,6 +33,7 @@ const services = [
     number: '04',
     label: 'Storefronts',
     icon: Store,
+    image: storefrontsImage,
     description:
       'Crystal-clear glass that draws customers in. Regular visits keep your first impression spotless, every time.',
   },
@@ -45,18 +53,16 @@ export function WhatWeDo() {
         </p>
 
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {services.map(({ number, label, icon: Icon, description }) => (
+          {services.map(({ number, label, icon: Icon, image, description }) => (
             <div
               key={label}
               className="overflow-hidden rounded-2xl border border-border bg-background"
             >
-              {/* TODO: replace with <img src={...} alt="..." className="aspect-[4/3] w-full object-cover" /> */}
-              <div
-                aria-hidden
-                className="flex aspect-[4/3] items-center justify-center bg-blue-500 text-xs font-medium tracking-widest text-white uppercase"
-              >
-                Photo: {label}
-              </div>
+              <img
+                src={image}
+                alt={`${label} window cleaning`}
+                className="aspect-[4/3] w-full object-cover"
+              />
 
               <div className="p-8">
                 <div className="flex items-start justify-between">
