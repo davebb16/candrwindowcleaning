@@ -1,6 +1,5 @@
 import { useState, type FormEvent } from 'react'
 import emailjs from '@emailjs/browser'
-import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
@@ -101,9 +100,13 @@ export function QuoteForm() {
             />
           </div>
 
-          <Button type="submit" disabled={status === 'submitting'}>
+          <button
+            type="submit"
+            disabled={status === 'submitting'}
+            className="rounded-full bg-foreground px-5 py-2 text-xs font-medium tracking-[0.2em] text-background uppercase transition-colors duration-300 hover:bg-foreground/85 disabled:pointer-events-none disabled:opacity-50"
+          >
             {status === 'submitting' ? 'Sending…' : 'Get My Free Quote'}
-          </Button>
+          </button>
 
           {status === 'success' && (
             <p className="text-sm text-emerald-600 dark:text-emerald-400" role="status">

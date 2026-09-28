@@ -42,17 +42,8 @@ The site's angle: **C&R is the highest-quality window cleaning service in the Ka
   - If the env vars are missing, forms fail gracefully (error state shown to the user, details logged to console) rather than throwing
 
 ## Brand & Design System
-<!-- Fill this section in once branding is established -->
-- **Primary brand colors**: (define as CSS vars in `App.css`, map in `@theme inline`)
-  <!-- Example:
-  - Brand Blue: `#3b82f6` → `bg-brand`, `text-brand`, `border-brand`
-  - Dark: `#0f172a` → `bg-dark`, `text-dark`, `border-dark`
-  -->
-- **Button patterns**:
-  <!-- Example:
-  - Primary CTA: `bg-brand text-white font-semibold hover:bg-brand/90`
-  - Secondary CTA: `bg-dark text-white border border-white/20 hover:bg-dark/80`
-  -->
+- **Primary brand color**: a restrained blue accent — `--brand: #2563eb` / `--brand-foreground: #ffffff` in `App.css` (`:root`, same value in both light/dark — no separate dark-mode override needed), mapped to `bg-brand` / `text-brand` / `border-brand` via `@theme inline`. Used deliberately sparingly per the client's brief ("just enough to break it up, not a ton of blue"): the `WhatWeDo` card icon badges (`bg-brand/10` + `text-brand`), the Footer social-icon hover state (`hover:border-brand hover:text-brand`), and site-wide focus rings (`--ring` is also set to blue, so `focus-visible` states on inputs/buttons pick it up automatically via shadcn's existing `ring-ring` classes). Don't reach for `bg-brand` as a general-purpose section/button color — it's an accent, not a primary UI color.
+- **Button patterns**: pill CTAs use `rounded-full` + `text-xs font-medium tracking-[0.2em] uppercase` + `transition-colors duration-300`, colored with theme tokens so they auto-adapt: `bg-foreground text-background hover:bg-foreground/85` (Hero's "Get a Free Quote" nav button and QuoteForm's submit button both use this exact pattern — keep them matching if either changes). Hero's nav button happens to hard-code `bg-white text-black` instead of the tokens since the hero is always-dark regardless of site theme (see Theming) — that's intentional, not an inconsistency to "fix."
 - **Section max-width**: `mx-auto max-w-8xl px-4 sm:px-6 lg:px-8` — `max-w-8xl` (88rem/1408px) is a custom size added via `--container-8xl` in `App.css`'s `@theme inline` block (Tailwind's default scale tops out at `7xl`/80rem)
 - **Responsive breakpoints**: Mobile-first. `md:` for desktop nav visibility, `lg:` for layout shifts
 - **CSS utility classes** (defined in `App.css` `@layer components`):
@@ -91,7 +82,7 @@ The site's angle: **C&R is the highest-quality window cleaning service in the Ka
 | `WhatWeDo.tsx` | "What We Do" section (light bg, `bg-grid`) below the hero. Heading + a 4-card grid (Commercial, Residential, Apartments, Storefronts) — each card has a photo on top (currently stock, see Image Assets), then an icon badge, a faint numbered watermark (01–04), a title, and a short description. |
 | `WhyChooseUs.tsx` | "Why Choose Us" section (dark, photo background — currently a `bg-blue-500` placeholder, see Pending Photo Assets) — large `font-serif` reframe statement, centered, plus a 4-column row of short proof points (quality standard, pricing transparency, local/KC, longevity via included seal+track cleaning). |
 | `QuoteForm.tsx` | "Get a Quote" section at the bottom of the homepage, `id="quote"` (scroll target for the hero's links). Name/email/phone/message fields + honeypot anti-spam field, submits via EmailJS (see Stack & Tools). |
-| `Footer.tsx` | Site-wide footer, rendered in `__root.tsx` below `<Outlet />` (appears on every page). No background of its own — just a `border-t`, so it blends with whatever section it follows. Dynamic copyright year + "C and R Window Cleaning, LLC", Facebook/Instagram icon buttons on the right — hand-drawn inline SVGs (`lucide-react` dropped brand/social icons from its set), hrefs are still placeholder `#` and need real social URLs. |
+| `Footer.tsx` | Site-wide footer, rendered in `__root.tsx` below `<Outlet />` (appears on every page). No background of its own — just a `border-t`, so it blends with whatever section it follows. Small/muted copyright year + "C and R Window Cleaning, LLC" (`text-xs text-muted-foreground/60`, deliberately subtle), Facebook/Instagram/X/LinkedIn icon buttons on the right (blue-accent hover) — hand-drawn inline SVGs (`lucide-react` dropped brand/social icons from its set; the X icon is a generic crossed-lines glyph, not a reproduction of the official logo), hrefs are still placeholder `#` and need real social URLs. |
 
 ### shadcn Primitives (`/src/components/ui/`)
 `button` · `input` · `textarea` · `label`
