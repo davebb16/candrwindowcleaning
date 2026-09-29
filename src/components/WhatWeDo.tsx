@@ -60,7 +60,7 @@ export function WhatWeDo() {
                 className="aspect-[4/3] w-full object-cover"
               />
 
-              <div className="p-8">
+              <div className="py-6 sm:p-8">
                 <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-brand/10">
                   <Icon className="h-5 w-5 text-brand" strokeWidth={1.5} />
                 </div>
