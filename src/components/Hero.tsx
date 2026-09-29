@@ -50,7 +50,7 @@ export function Hero() {
             <p className="mt-4 text-sm leading-relaxed text-white/70">
               The highest standard in Kansas City window cleaning —
               without the high-end price tag. Spotless, streak-free glass
-              for homes and businesses across the metro, done right the
+              for commercial and residental properties across the metro, done right the
               first time.
             </p>
             <a

@@ -10,7 +10,7 @@ const reasons = [
   {
     title: 'Locally owned in KC',
     description:
-      'Proudly serving homes and businesses across the entire Kansas City metro.',
+      'Proudly serving commercial and residental properties across the entire Kansas City metro.',
   },
   {
     title: 'Fair, upfront pricing',
