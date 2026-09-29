@@ -1,7 +1,7 @@
 import { ArrowDown } from 'lucide-react'
-import heroImage from '@/assets/images/hero.jpg'
+import heroImage from '@/assets/images/hero.webp'
 import logo from '@/assets/images/logo.svg'
-import heroLogo from '@/assets/images/hero-logo.png'
+import heroLogo from '@/assets/images/hero-logo.webp'
 
 export function Hero() {
   return (

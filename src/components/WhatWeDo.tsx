@@ -1,8 +1,8 @@
 import { Building2, Home, BuildingComplex, Store } from 'lucide-react'
-import commercialImage from '@/assets/images/whatwedo-commercial.jpg'
-import residentialImage from '@/assets/images/whatwedo-residential.jpg'
-import apartmentsImage from '@/assets/images/whatwedo-apartments.jpg'
-import storefrontsImage from '@/assets/images/whatwedo-storefronts.jpg'
+import commercialImage from '@/assets/images/whatwedo-commercial.webp'
+import residentialImage from '@/assets/images/whatwedo-residential.webp'
+import apartmentsImage from '@/assets/images/whatwedo-apartments.webp'
+import storefrontsImage from '@/assets/images/whatwedo-storefronts.webp'
 
 const services = [
   {
