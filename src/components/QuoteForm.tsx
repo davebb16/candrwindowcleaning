@@ -47,10 +47,10 @@ export function QuoteForm() {
     <section id="quote" className="bg-grid bg-background px-6 py-20 md:px-10 lg:px-16 md:py-28">
       <div className="mx-auto max-w-2xl">
         <p className="text-xs tracking-[0.3em] text-brand uppercase">
-          Ready to get started?
+          Want to learn more?
         </p>
         <h2 className="mt-3 font-serif text-3xl uppercase sm:text-4xl">
-          Get a Quote
+          Explore my Options
         </h2>
         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
           Tell us about your property and what you'd like cleaned. We'll
